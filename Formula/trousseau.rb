@@ -7,11 +7,11 @@ class Trousseau < Formula
 
   if OS.mac?
     url "https://github.com/oleiade/trousseau/releases/download/v0.4.1/trousseau_0.4.1_Darwin_x86_64.tar.gz"
-    sha256 "44eaae1e580d46c5b9b974f06182a2f0f5bf8cf4409020fa88de57258883ae65"
+    sha256 "b514564fd226853961df63e9191d1f07b7b283c8d2956513732fcd4363b46f0f"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/oleiade/trousseau/releases/download/v0.4.1/trousseau_0.4.1_Linux_x86_64.tar.gz"
-      sha256 "b498c47d2392a9a595b2ca1bc79e60c0a846732c12df02fb5f3e1170245f0e88"
+      sha256 "473473de6d5e70c12160f7080a3a1632e7684a3760309de164f9fb03f7a6fe7b"
     end
   end
 
