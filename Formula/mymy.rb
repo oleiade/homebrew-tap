@@ -1,4 +1,4 @@
-class MyMy < Formula
+class Mymy < Formula
   desc "Get essential information about your device"
   homepage "https://github.com/oleiade/mymy"
   version "v0.2.0"
