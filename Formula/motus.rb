@@ -1,15 +1,15 @@
 class Motus < Formula
     desc "Dead simple password generator"
     homepage "https://github.com/oleiade/motus"
-    version "v0.1.0"
+    version "v0.2.0"
     license "AGPL-3.0 license"
 
     if Hardware::CPU.arm?
-      url "https://github.com/oleiade/motus/releases/download/v0.1.0/motus-aarch64-apple-darwin.tar.gz"
-      sha256 "d0558847c4e4e14e8ecc4b788e4241eeebc317c20b08b924d3032c1ccaa2267c"
+      url "https://github.com/oleiade/motus/releases/download/v0.2.0/motus-aarch64-apple-darwin.tar.gz"
+      sha256 "a24a4a2db5da3f4dfef9b94bb02d778308bb8ddd073544ed51de954a8bfa7590"
     else
-      url "https://github.com/oleiade/motus/releases/download/v0.1.0/motus-x86_64-apple-darwin.tar.gz"
-      sha256 "9aaff99a7c310ccb15b835244d06cb532efbb6bdc071e1b606437c2c0258337c"
+      url "https://github.com/oleiade/motus/releases/download/v0.2.0/motus-x86_64-apple-darwin.tar.gz"
+      sha256 "5c7eaee9f7de14448aa468a69bbe4d5dd6bed3a0b12fb52fdce424829d082316"
     end
 
     def install
