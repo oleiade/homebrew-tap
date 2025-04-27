@@ -13,7 +13,7 @@ class Motus < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/oleiade/motus/releases/download/v0.3.6/motus_0.3.6_darwin_arm64.zip"
-      sha256 "463450c33a5e0e1399ad1a709d621264a34a99a6274accc46b6f6c436e725418"
+      sha256 "f2abf81494e53816d1e1f6739f6a92b8c23c0c63601b34859d85544e41e677d7"
 
       def install
         bin.install "motus"
@@ -25,7 +25,7 @@ class Motus < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/oleiade/motus/releases/download/v0.3.6/motus_0.3.6_linux_amd64.tar.gz"
-        sha256 "24fa7fe45452fe547d7f1da44793bb219e63c752126d60875b0aec77f9ef1b85"
+        sha256 "3e94f3336348eb427082c7805409e3f9d6f9dfe8c7631a89a0070af66f3d7cbc"
 
         def install
           bin.install "motus"
