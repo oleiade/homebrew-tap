@@ -5,15 +5,15 @@
 class Motus < Formula
   desc "A simple and elegant password generator"
   homepage "https://github.com/oleiade/motus"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   depends_on "rust" => :build
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/oleiade/motus/releases/download/v0.3.0/motus_0.3.0_darwin_arm64.zip"
-      sha256 "986447e537f03a5e9c654ddcf6ea2914a00acafd5b8bccc3a2eef82d0ddde535"
+      url "https://github.com/oleiade/motus/releases/download/v0.3.1/motus_0.3.1_darwin_arm64.zip"
+      sha256 "999a50c10cc460ca7882a1fcfe5470aa51b5a6334aead57146822b19fcef883d"
 
       def install
         bin.install "motus"
@@ -23,8 +23,15 @@ class Motus < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/oleiade/motus/releases/download/v0.3.0/motus_0.3.0_linux_amd64.tar.gz"
-      sha256 "277603bfb92a0776191373cc5917f1f8dd4d9cfd99273d0e0759748a496ae866"
+      url "https://github.com/oleiade/motus/releases/download/v0.3.1/motus_0.3.1_linux_amd64.tar.gz"
+      sha256 "d01a40d440cf7f938af28f6e4fe87190e04cf4cf656b5405d22d26b814b800ea"
+      def install
+        bin.install "motus"
+      end
+    end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/oleiade/motus/releases/download/v0.3.1/motus_0.3.1_linux_arm64.tar.gz"
+      sha256 "f19af93cf885c8d157ac5efbdc4132467e0d96e01cd7b58117478383a6cb3638"
       def install
         bin.install "motus"
       end
