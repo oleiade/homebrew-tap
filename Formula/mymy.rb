@@ -5,15 +5,15 @@
 class Mymy < Formula
   desc "Access the most common information about your system using a single command"
   homepage "https://github.com/oleiade/mymy"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   depends_on "rust" => :build
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/oleiade/mymy/releases/download/v0.4.0/mymy_0.4.0_darwin_arm64.zip"
-      sha256 "8cfcadc366e110d088e01c46506f1da0e2a39e6bb0a68ba6435866016a88a7f0"
+      url "https://github.com/oleiade/mymy/releases/download/v0.5.0/mymy_0.5.0_darwin_arm64.zip"
+      sha256 "13c02bd41fd5585a01ce04a94d9aafbc0279628074eed7796562f2d6cb57e3d7"
 
       def install
         bin.install "my"
@@ -23,15 +23,15 @@ class Mymy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oleiade/mymy/releases/download/v0.4.0/mymy_0.4.0_linux_amd64.tar.gz"
-      sha256 "0d59866d6f29c023b323fa1eaa4b6638a594577270b597867db565c866ba07c1"
+      url "https://github.com/oleiade/mymy/releases/download/v0.5.0/mymy_0.5.0_linux_amd64.tar.gz"
+      sha256 "a2d6c9628902f632656293c031da46b5f1c82ad576ef78846814c9d77af0e5dc"
       def install
         bin.install "my"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oleiade/mymy/releases/download/v0.4.0/mymy_0.4.0_linux_arm64.tar.gz"
-      sha256 "c8cfcd492485d4444be7cac9b58a8aeded09f01f60eb212dadcfce42c2566295"
+      url "https://github.com/oleiade/mymy/releases/download/v0.5.0/mymy_0.5.0_linux_arm64.tar.gz"
+      sha256 "947083f77dfbe2263f49f9302afb1433552fb1d59fbf8a24f8b2b36bf55385be"
       def install
         bin.install "my"
       end
